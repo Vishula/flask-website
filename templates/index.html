@@ -17,10 +17,14 @@
     </div>
     <h2>Products</h2>
     <div class="products">
-        <div class="card">ONE</div>
-        <div class="card">TWO</div>
-        <div class="card">THREE</div>
-        <div class="card">FOUR</div>
+        
+        {% for id, name, price, image_url in product_items %}
+        <div class="card">
+            <img src="{{image_url}}">
+        </div>
+        {% endfor %}
+        
+        
 
     </div>
 
