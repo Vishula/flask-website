@@ -20,6 +20,8 @@
         
         {% for id, name, price, image_url in product_items %}
         <div class="card">
+            <p>{{name}}</p>
+            <p>{{price}}</p>
             <img src="{{image_url}}">
         </div>
         {% endfor %}
