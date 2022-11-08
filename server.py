@@ -16,7 +16,7 @@ def index():
         id, name, price, image_url = row 
         price = f'${price/100:.2f}'
         product_items.append([id, name, price, image_url])
-
+        print('test commit')
     cur.close()
     conn.close()
     
