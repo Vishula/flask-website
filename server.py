@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    conn = psycopg2.connect('DB_URL')
+    conn = psycopg2.connect(DB_URL)
     cur = conn.cursor()
     cur.execute('SELECT id, name, price, image_url price FROM clothes')
     results = cur.fetchall()
