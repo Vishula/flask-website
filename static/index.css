@@ -9,11 +9,13 @@ body {
     
 }
 .card {
-    background-color: grey;
+     
     margin: 0;
-    padding: 1rem;
+    padding: 1rem; 
     height: 4rem;
-    
-
 }
 
+img{
+    width: 200px;
+    height: 200px;
+}
