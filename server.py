@@ -1,12 +1,14 @@
 import psycopg2
 from flask import Flask, request, redirect, render_template
+import os
 
+DB_URL = os.environ.get('DATABASE_URL', 'dbname=farfetch')
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    conn = psycopg2.connect('dbname=farfetch')
+    conn = psycopg2.connect('DB_URL')
     cur = conn.cursor()
     cur.execute('SELECT id, name, price, image_url price FROM clothes')
     results = cur.fetchall()
