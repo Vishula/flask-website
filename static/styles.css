@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+     
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    ;
+    
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 65px;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 45px;
+    color: black;
+}
+
+h3 {
+  font-size: 20px;  
+  color: black;
+}
+
+p {
+    font-size: 20px;
+    color: darkgray;
+    margin: 15px 0 20px 0;
+}
+
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    box-shadow: 0 20px 20px 45px #363634;
+    background: #d1c5ab;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li {
+     
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover, 
+#navbar li a.active{
+    color: #524636;
+     
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 18px;
+    bottom: -4px;
+
+}
+
+#banner {
+    background-image: url(/static/img/blouse-2597205_1920.jpg);
+    height: 50vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#banner h2 {
+    padding-bottom:15px ;
+    color: #a2807e;
+}
+
+#banner h4 {
+    color: #6a4849;
+}
+
+#banner button {
+    color: #6a4849;
+    border: 1px dotted #d1c5ab;
+    margin: 5px;
+    
+}
+#banner button:hover{
+    background-color: #a2807e;
+}
