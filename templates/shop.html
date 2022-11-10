@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="/static/img/logo.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="/">Home</a></li>
+                <li><a class="active" href="shop">Shop</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a href="create">Create Account</a></li>
+                
+            </ul>
+        </div>
+    </section>
+ 
+    <section id="product1" class="section1">
+        <h2>Featured Products</h2>
+        <p>Summer Collections New Designs</p>
+        <div class="pro-container-box">
+        {% for id, name, price, image_url, description in product_items %}
+            <div class="pro-container">
+                <div class="pro">
+                    <img src="{{image_url}}">
+                    <div class="desc">
+                        <h4>{{name}}</h4>
+                        <p>{{description}}</p>
+                        <p>{{price}}</p>
+    
+                        <a href="#">Buy</a>
+                        <a href="#">cart</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+ 
+        {% endfor %}
+    </section>
+</body>
+</html>
+ 
