@@ -44,7 +44,10 @@ p {
     justify-content: space-between;
     padding: 20px 70px;
     
- 
+    /* background: url(/static/img/headeralt1.jpeg);
+    background-position: 2px;
+    background-size: cover;
+    opacity: 0.5; */
     background: rgba(0, 0, 0, 0.4);
     z-index: 999;
     position: sticky;
@@ -339,7 +342,10 @@ footer span{
 }
 
 .loginbody {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-blend-mode: 
+    
 }
 
 #product1  h2 {
@@ -349,4 +355,5 @@ footer span{
 #product1  p {
     font-size: 20px;
     color: #524636;
+    
 }
