@@ -7,8 +7,8 @@ import os
 DB_URL = os.environ.get('DATABASE_URL', 'dbname=farfetch')
 
 app = Flask(__name__)
-app.secret_key="anystringhere"
-# app.secret_key = os.environ.get("SECRET_KEY") 
+# app.secret_key="anystringhere"
+app.secret_key = os.environ.get("SECRET_KEY") 
 @app.route('/')
 def homepage():
     
