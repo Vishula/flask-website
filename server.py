@@ -1,5 +1,4 @@
 import psycopg2
-import requests
 import bcrypt
 from flask import Flask, session, request, redirect, render_template, flash
 import os
@@ -89,4 +88,4 @@ def create():
     return redirect ('loginpage')
  
 if __name__ == '__main__':
-    app.run(debug=True, port=5002)
+    app.run(debug=True)
