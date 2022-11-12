@@ -8,7 +8,10 @@ CREATE TABLE clothes (
     image_url TEXT
 ); 
 
+DROP TABLE IF EXISTS users;
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
+    name TEXT,
+    email TEXT,
+    user_password TEXT
 );

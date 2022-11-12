@@ -16,3 +16,8 @@ INSERT INTO clothes(name, price, description, image_url) VALUES('Band Tees x Vin
 INSERT INTO clothes(name, price, description, image_url) VALUES('AWGE x Playboi Carti', 30000, 'Playboi Carti x Cannot Burn Summer Tour Shirt', 'https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:700/output=quality:50/compress/bajZB0HNQWOhwBfU0iDB');
 INSERT INTO clothes(name, price, description, image_url) VALUES('Bape', 13500, 'Bape Box Logo 'Ape Shall Never Kill Ape' Small White Tee', 'https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:700/output=quality:50/compress/wAaVz99VRhyZpQEe72Nu');
 INSERT INTO clothes(name, price, description, image_url) VALUES('Band Tees x Vintage', 30000, '90s Black Sabbath - Master Of Reality Tee', 'https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:700/output=quality:50/compress/ULHGSHXsR1GmPDexrn3W');
+
+
+INSERT INTO users(name, email, user_password) VALUES('vish', 'vish@gmail.com', 'pass');
+
+ 

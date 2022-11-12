@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +14,39 @@
         <a href="#"><img src="/static/img/logo.png" class="logo" alt="logo"></a>
         <div>
             <ul id="navbar">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="shop">Shop</a></li>
-                <li><a href="login">Login</a></li>
-                <li><a class="active" href="create">Create Account</a></li>
+                <li><a href="loginpage">Login</a></li>
+                <li><a class="active" href="createpage">Create Account</a></li>
                 
             </ul>
         </div>
     </section>
+
     <h1>Create a New Account</h1>
+    <div class="sighup">
+        <form action="/create" class="createform" method="POST">
+            <h4>Name</h4>
+            <input required type="text" name="name">
+            <h4>Email Account</h4>
+            <input required type="text" name="email" autocomplete="email">
+            <h4>Password</h4>
+            <input required type="text" name="password">
+            <input type="submit" value="Create your account">
+        </form>
+    </div>
+
+    <div class="signupspace">
+        
+
+    </div>
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span>K.A Designs by vish</span>
+    </footer>
 </body>
 </html>

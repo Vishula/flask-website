@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles.css">
@@ -14,13 +16,17 @@
             <ul id="navbar">
                 <li><a  href="/">Home</a></li>
                 <li><a class="active" href="shop">Shop</a></li>
-                <li><a href="login">Login</a></li>
-                <li><a href="create">Create Account</a></li>
+                <li><a href="loginpage">Login</a></li>
+                <li><a href="createpage">Create Account</a></li>
                 
             </ul>
         </div>
     </section>
- 
+    <div class="flash-shop">
+        {% for msg in get_flashed_messages() %}
+        <p>{{msg}}</p>
+        {% endfor %}
+    </div>
     <section id="product1" class="section1">
         <h2>Featured Products</h2>
         <p>Summer Collections New Designs</p>
@@ -34,17 +40,26 @@
                         <p>{{description}}</p>
                         <p>{{price}}</p>
     
-                        <a href="#">Buy</a>
-                        <a href="#">cart</a>
+                        <!-- <a href="#">Buy</a>
+                        <a href="#">cart</a> -->
                     </div>
                 </div>
-                
             </div>
+            {% endfor %} 
         </div>
         
  
-        {% endfor %}
+        
     </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <span>K.A Designs by vish</span>
+    </footer>
 </body>
 </html>
  

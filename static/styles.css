@@ -42,8 +42,8 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 20px 70px;
-    box-shadow: 0 10px 10px 10px #eeebe7;
-    background: #d1c5ab;
+ 
+    background: rgba(0, 0, 0, 0.4);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -91,7 +91,7 @@ p {
 }
 
 #banner {
-    background-image: url(/static/img/blouse-2597205_1920.jpg);
+    background-image: url(/static/img/bannneralt.png);
     height: 50vh;
     width: 100%;
     background-position: top 25% right 0;
@@ -104,26 +104,23 @@ p {
 }
 
 #banner h2 {
-    padding-bottom:15px ;
-    color: #a2807e;
+    margin: auto;
+    padding:5px ;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+
 }
 
 #banner h4 {
-    color: #6a4849;
+    color: white;
+    background: black;
 }
 
-#banner button {
-    color: #6a4849;
-    border: 1px dotted #d1c5ab;
-    margin: 5px;
-    
-}
-#banner button:hover{
-    background-color: #a2807e;
-}
-#procut1 .pro-container-box{
+#product1 .pro-container-box{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    
     
 
 }
@@ -131,7 +128,7 @@ p {
     /* display: flex;
     justify-content: space-between; */
     padding-top: 20px;
-    /* flex-wrap: wrap; */
+    
 }
 
 /* #product1 .section1{
@@ -159,4 +156,158 @@ p {
     height: 250px;
     border-radius: 15px;
 
+}
+
+.design{
+    padding: 4.5rem 0;
+}
+
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.title h2 {
+    font-family: var(--Playfair);
+    font-size: 2.5rem;
+    width: 90%;
+}
+
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+
+.design-content{
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.design-image{
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    
+}
+
+.design-image::after{
+    position:absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+}
+
+.design-image img {
+    transition: all 0.2s ease;
+    width: 700px;
+    height: 500px;
+}
+
+.design-item:hover img{
+    transform: scale(1.1);
+}
+
+.design-image span:first-of-type{
+    position:absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: var(--exDark);
+    color: black;
+    padding: 0.25rem 1rem;
+}
+
+.design-image span:last-of-type{
+    position:absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: var(--exDark);
+    color: black;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 0.25rem 1rem;
+}
+
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+
+}
+
+.articles {
+    margin: auto;
+    width: 50%;
+}
+.design-title p{
+    color: var(--dark);
+    text-transform: capitalize;
+    font-family: var(--Playfair);
+}
+
+footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    border: 2px;
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.6s ease;
+}
+.social-links a:hover{
+    background:  white;
+    color: black;
+}
+
+footer span{
+    margin-top: 1rem;
+    display: block;
+    letter-spacing: 2px;
+}
+
+.signupspace{
+    height: 500px;
+    width: 1000px; 
+}
+
+.loginspace{
+    height: 600px;
+}
+
+.flash-shop p{
+    color: green;
+}
+
+.flash-fail p{
+    color: red;
 }
