@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
 </head>
-<body>
+<body class="loginbody">
     <section id="header">
         <a href="#"><img src="/static/img/logo.png" class="logo" alt="logo"></a>
         <div>
@@ -22,17 +22,21 @@
             </ul>
         </div>
     </section>
-    <h1>Login Page</h1>
+    <div class="login"><h1>Login Page</h1></div>
+    
     <div class="flash-fail">
         {% for msg in get_flashed_messages() %}
         <p>{{msg}}</p>
         {% endfor %}
     </div>
-    <form action="/login" method="post">
-        <label>Email: <input type="text" name="email" value="{{email}}"></label>
-        <label>Password: <input type="password" name="password" value="{{password}}"></label>
-        <input type="submit">
-    </form>
+    <div class="loginform">
+        <form action="/login" method="post">
+            <label>Email: <input type="text" name="email" value="{{email}}"></label>
+            <label>Password: <input type="password" name="password" value="{{password}}"></label>
+            <input type="submit">
+        </form>
+    </div>
+
     <div class="loginspace">
         
 

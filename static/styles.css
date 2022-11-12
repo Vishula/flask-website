@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
+   
      
 }
 
@@ -42,6 +43,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 20px 70px;
+    
  
     background: rgba(0, 0, 0, 0.4);
     z-index: 999;
@@ -139,7 +141,7 @@ p {
 } */
 #product1 .pro {
      
-    width: 23%;
+    width: 55%;
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid black;
@@ -310,4 +312,41 @@ footer span{
 
 .flash-fail p{
     color: red;
+}
+
+.login h1{
+    
+    padding: 10px;
+    font-size: 40px;
+    margin: 35px;
+}
+
+.loginform {
+    margin: 35px;
+}
+ 
+.createform{
+    margin: 35px;
+}
+
+.newuser{
+    margin: 35px;
+ 
+}
+
+.newuser h1 {
+    font-size: 30px;
+}
+
+.loginbody {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#product1  h2 {
+    font-size: 30px;
+}
+
+#product1  p {
+    font-size: 20px;
+    color: #524636;
 }
